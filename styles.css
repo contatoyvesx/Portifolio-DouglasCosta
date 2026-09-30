@@ -82,3 +82,60 @@ h1{margin:0 0 22px}
   .hero-role{font-size:15px}
   .hero-divider{margin-bottom:18px}
 }
+
+
+/* Mobile polish */
+@media (max-width: 800px){
+  .container{width:min(100% - 32px,var(--max))}
+  .nav{height:64px}
+  .logo{font-size:21px}
+  .hero{padding:58px 0 64px}
+  .hero-grid{gap:42px}
+  .hero-topline{margin-bottom:18px}
+  .availability{font-size:12px}
+  .eyebrow{font-size:9px;letter-spacing:1.5px;margin-bottom:14px}
+  h1{font-size:clamp(48px,15vw,70px);letter-spacing:-3px;margin-bottom:20px;line-height:.86}
+  .name-last{letter-spacing:3px;-webkit-text-stroke:1.5px var(--accent)}
+  .hero-role{font-size:15px;line-height:1.55;margin-bottom:22px}
+  .hero-divider{margin-bottom:18px}
+  .hero-meta{width:100%;margin-bottom:24px}
+  .hero-meta div{padding:14px 16px}
+  .hero-meta strong{font-size:13px}
+  .hero-meta small{font-size:10px}
+  .actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .button{width:100%;padding:13px 10px;font-size:13px}
+  .button.primary{gap:8px}
+  .hero-card{width:100%;transform:none}
+  pre{padding:20px;font-size:11px;line-height:1.75}
+  .section{padding:68px 0}
+  .about-grid{gap:34px}
+  .about-photo{width:180px;height:180px}
+  .section h2{font-size:clamp(31px,9vw,42px);letter-spacing:-1.5px}
+  .about-copy{font-size:15px}
+  .stats{grid-template-columns:1fr;gap:18px;margin-top:30px}
+  .projects{display:grid;grid-template-columns:1fr}
+  .project,.project.featured{min-height:0;padding:24px}
+  .project-content{margin-top:35px}
+  .project-top{font-size:9px;gap:7px}
+  .project h3{font-size:24px}
+  .project p{font-size:13px;line-height:1.6}
+  .skills-grid{gap:12px;margin-top:34px}
+  .skill-group{padding:21px}
+  .contact{padding:76px 0}
+  .contact h2{font-size:clamp(38px,11vw,54px);letter-spacing:-2px}
+  .contact-links{flex-direction:column}
+  .contact-links a{text-align:center}
+  footer{padding:20px 0}
+}
+@media (max-width:480px){
+  .container{width:calc(100% - 28px)}
+  .hero{padding:48px 0 58px}
+  .hero-index{display:none}
+  h1{font-size:clamp(45px,16vw,62px)}
+  .name-last{letter-spacing:2px}
+  .hero-role{font-size:14px}
+  .hero-meta{border-radius:10px}
+  .actions{grid-template-columns:1fr}
+  .hero-card{border-radius:10px}
+  pre{padding:17px;font-size:10px;overflow-x:auto}
+}
