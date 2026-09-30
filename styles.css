@@ -166,3 +166,22 @@ h1{margin:0 0 22px}
   .hero-card{max-height:300px}
   .hero-card pre{max-height:262px;padding:16px;font-size:10px;line-height:1.65}
 }
+
+
+/* Final mobile visual polish */
+@media (max-width:800px){
+  .actions{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:4px}
+  .actions .button{width:auto;min-width:0;text-align:center;justify-content:center}
+  .actions .button.primary{padding:11px 18px;font-size:12px}
+  .actions .button.secondary{padding:11px 18px;font-size:12px}
+  .hero-card{margin-top:4px;max-height:270px}
+  .hero-card pre{max-height:232px}
+}
+@media (max-width:480px){
+  .actions{gap:9px}
+  .actions .button.primary{padding:10px 17px}
+  .actions .button.secondary{padding:10px 17px}
+  .hero-card{max-height:245px}
+  .hero-card pre{max-height:207px}
+  .hero-card .terminal-top{height:32px}
+}
