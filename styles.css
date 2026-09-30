@@ -53,7 +53,7 @@ footer{padding:25px 0;color:#71717a;font-size:12px}.footer-inner{display:flex;ju
 .hero-index{font:11px monospace;color:#52525b;letter-spacing:2px}
 .eyebrow{margin-bottom:18px}
 h1{margin:0 0 22px}
-.name-last{color:transparent!important;-webkit-text-stroke:2px var(--accent);text-stroke:2px var(--accent);font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:.9em;letter-spacing:-2px}
+.name-last{color:transparent!important;-webkit-text-stroke:2px var(--accent);text-stroke:2px var(--accent);font-family:'Space Grotesk',sans-serif;font-style:normal;font-weight:700;font-size:1em;letter-spacing:7px}
 .hero-role{max-width:590px;color:#a1a1aa;font-size:17px;line-height:1.65;margin-bottom:26px}
 .hero-divider{width:100%;max-width:780px;height:1px;background:linear-gradient(90deg,var(--line),transparent);margin-bottom:24px}
 .hero-meta{display:grid;grid-template-columns:1fr 1.35fr 1fr;gap:0;max-width:780px;margin:0 0 34px;border:1px solid var(--line);background:rgba(17,17,20,.62);border-radius:12px;overflow:hidden}
