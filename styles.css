@@ -139,3 +139,30 @@ h1{margin:0 0 22px}
   .hero-card{border-radius:10px}
   pre{padding:17px;font-size:10px;overflow-x:auto}
 }
+
+
+/* Final mobile layout */
+@media (max-width: 800px){
+  .hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:34px}
+  .hero-grid>div:first-child{width:100%}
+  .name-title{width:100%;font-size:clamp(52px,17vw,72px);line-height:.82;letter-spacing:-3px}
+  .name-first,.name-last{display:block;width:100%;white-space:nowrap}
+  .name-last{font-size:1em;letter-spacing:2px;margin-top:4px}
+  .hero-meta{width:100%}
+  .actions{width:100%}
+  .hero-card{width:100%;max-height:360px}
+  .hero-card pre{max-height:320px}
+}
+@media (max-width:480px){
+  .hero{padding:42px 0 52px}
+  .hero-topline{margin-bottom:16px}
+  .eyebrow{font-size:8.5px;letter-spacing:1.25px;white-space:nowrap}
+  .name-title{font-size:clamp(48px,16vw,64px);letter-spacing:-2.5px}
+  .name-last{letter-spacing:1px;-webkit-text-stroke:1.25px var(--accent)}
+  .hero-role{font-size:14px}
+  .hero-meta{margin-bottom:20px}
+  .hero-meta div{padding:13px 15px}
+  .actions{gap:8px}
+  .hero-card{max-height:300px}
+  .hero-card pre{max-height:262px;padding:16px;font-size:10px;line-height:1.65}
+}
