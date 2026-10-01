@@ -40,30 +40,52 @@ if ('IntersectionObserver' in window) {
 
 const isMobile = window.matchMedia('(max-width: 800px)').matches;
 
-if (isMobile && 'IntersectionObserver' in window) {
-  const activeGroups = [
-    ...document.querySelectorAll('.skills-grid .skill-group'),
-    ...document.querySelectorAll('.projects .project')
-  ];
+if (isMobile) {
+  const skillCards = [...document.querySelectorAll('.skills-grid .skill-group')];
+  const projectCards = [...document.querySelectorAll('.projects .project')];
 
-  const activeObserver = new IntersectionObserver((entries) => {
-    const visible = entries
-      .filter(entry => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+  function updateActiveCard(cards) {
+    if (!cards.length) return;
 
-    if (!visible.length) return;
+    const focusLine = window.innerHeight * 0.48;
+    let closestCard = cards[0];
+    let closestDistance = Infinity;
 
-    const group = visible[0].target.parentElement;
-    const siblings = group ? [...group.children] : [];
-    siblings.forEach(item => item.classList.remove('is-active'));
-    visible[0].target.classList.add('is-active');
-  }, {
-    threshold: [0.15, 0.35, 0.55, 0.75],
-    rootMargin: '-25% 0px -45% 0px'
-  });
+    cards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      const cardCenter = rect.top + rect.height / 2;
+      const distance = Math.abs(cardCenter - focusLine);
 
-  activeGroups.forEach((item, index) => {
-    activeObserver.observe(item);
-    if (index === 0) item.classList.add('is-active');
-  });
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestCard = card;
+      }
+    });
+
+    cards.forEach(card => {
+      card.classList.toggle('is-active', card === closestCard);
+    });
+  }
+
+  let ticking = false;
+
+  function handleScroll() {
+    if (ticking) return;
+
+    ticking = true;
+
+    requestAnimationFrame(() => {
+      updateActiveCard(skillCards);
+      updateActiveCard(projectCards);
+      ticking = false;
+    });
+  }
+
+  skillCards[0]?.classList.add('is-active');
+  projectCards[0]?.classList.add('is-active');
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', handleScroll, { passive: true });
+
+  handleScroll();
 }
