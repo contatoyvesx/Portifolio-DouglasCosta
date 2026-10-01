@@ -208,3 +208,34 @@ if (isMobile) {
   window.addEventListener('resize', handleScroll, { passive: true });
   handleScroll();
 }
+
+/* Copiar dados de contato */
+document.querySelectorAll('.copy-button').forEach(button => {
+  button.addEventListener('click', async () => {
+    const value = button.dataset.copy;
+    const originalText = button.textContent;
+
+    try {
+      await navigator.clipboard.writeText(value);
+      button.textContent = 'Copiado!';
+      button.classList.add('is-copied');
+    } catch {
+      const textArea = document.createElement('textarea');
+      textArea.value = value;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      textArea.remove();
+
+      button.textContent = 'Copiado!';
+      button.classList.add('is-copied');
+    }
+
+    setTimeout(() => {
+      button.textContent = originalText;
+      button.classList.remove('is-copied');
+    }, 1600);
+  });
+});
