@@ -1,34 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 820">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 700">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#061426"/><stop offset=".55" stop-color="#050b15"/><stop offset="1" stop-color="#02060d"/></linearGradient>
   <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#31b8ff"/><stop offset="1" stop-color="#1769ff"/></linearGradient>
   <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
 </defs>
-<rect width="1920" height="820" fill="url(#bg)"/>
-<g font-family="Arial, Helvetica, sans-serif"><text x="100" y="78" fill="#f5f7fb" font-size="58" font-weight="700">DATA <tspan fill="#18a9ff">ENGINEERING</tspan></text><text x="100" y="120" fill="#b9c9dc" font-size="24" letter-spacing="8">FLUXO DO PROJETO</text></g>
+<rect width="1920" height="700" fill="url(#bg)"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="100" y="72" fill="#20b8ff" font-size="22" font-weight="700" letter-spacing="6">DATA ENGINEERING</text>
+<text x="100" y="118" fill="#f5f7fb" font-size="46" font-weight="700">FLUXO DO PROJETO</text>
+</g>
 <path d="M0 620 L260 760 H0Z" fill="#08275a" opacity=".45"/>
 <path d="M1920 80 L1650 0 H1920Z" fill="#06245b" opacity=".35"/>
-<g opacity=".45" filter="url(#soft)" fill="#0b66ff"><circle cx="250" cy="180" r="110"/><circle cx="1670" cy="620" r="120"/></g>
+<g opacity=".45" filter="url(#soft)" fill="#0b66ff"><circle cx="250" cy="180" r="110"/><circle cx="1670" cy="540" r="120"/></g>
 
 <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
   <g stroke="#148cff" stroke-width="2" fill="#06111f">
-    <rect x="65" y="165" width="315" height="410" rx="24"/>
-    <rect x="415" y="165" width="315" height="410" rx="24"/>
-    <rect x="765" y="165" width="315" height="410" rx="24"/>
-    <rect x="1115" y="165" width="315" height="410" rx="24"/>
-    <rect x="1465" y="165" width="315" height="410" rx="24"/>
+    <rect x="65" y="160" width="315" height="340" rx="24"/>
+    <rect x="415" y="160" width="315" height="340" rx="24"/>
+    <rect x="765" y="160" width="315" height="340" rx="24"/>
+    <rect x="1115" y="160" width="315" height="340" rx="24"/>
+    <rect x="1465" y="160" width="315" height="340" rx="24"/>
   </g>
 
   <g stroke="#16a9ff" stroke-width="4" stroke-dasharray="14 12" filter="url(#glow)" fill="none">
     <path d="M380 370 H415"/><path d="M730 370 H765"/><path d="M1080 370 H1115"/><path d="M1430 370 H1465"/>
   </g>
   <g fill="#19b7ff" filter="url(#glow)">
-    <circle cx="397" cy="370" r="9"/><circle cx="747" cy="370" r="9"/><circle cx="1097" cy="370" r="9"/><circle cx="1447" cy="370" r="9"/>
+    <circle cx="397" cy="330" r="9"/><circle cx="747" cy="330" r="9"/><circle cx="1097" cy="330" r="9"/><circle cx="1447" cy="330" r="9"/>
   </g>
 
   <!-- API -->
-  <g transform="translate(120 215)">
+  <g transform="translate(120 205)">
     <ellipse cx="105" cy="48" rx="82" ry="25" fill="url(#blue)" stroke="#6bd6ff" stroke-width="2"/>
     <rect x="23" y="48" width="164" height="115" fill="url(#blue)"/>
     <ellipse cx="105" cy="163" rx="82" ry="25" fill="#145edc"/>
@@ -38,11 +41,11 @@
     <rect x="118" y="125" width="125" height="68" rx="34" fill="#1769ff" stroke="#48c7ff" stroke-width="2"/>
     <text x="180" y="169" fill="#fff" font-size="34" font-weight="700">API</text>
   </g>
-  <text x="222" y="620" fill="#f5f7fb" font-size="27" font-weight="700">API</text>
-  <text x="222" y="655" fill="#b9c9dc" font-size="20">Coleta de dados via API</text>
+  <text x="222" y="540" fill="#f5f7fb" font-size="27" font-weight="700">API</text>
+  <text x="222" y="570" fill="#b9c9dc" font-size="20">Coleta de dados via API</text>
 
   <!-- transformação -->
-  <g transform="translate(480 210)">
+  <g transform="translate(480 200)">
     <rect x="40" y="70" width="180" height="145" rx="14" fill="#0b2443" stroke="#197eff" stroke-width="3"/>
     <g fill="#1688ff">
       <rect x="62" y="92" width="43" height="32" rx="3"/><rect x="112" y="92" width="43" height="32" rx="3"/><rect x="162" y="92" width="43" height="32" rx="3"/>
@@ -56,11 +59,11 @@
     </g>
     <path d="M212 180 l35 18 18 -35" fill="none" stroke="#1688ff" stroke-width="14" stroke-linecap="round"/>
   </g>
-  <text x="572" y="620" fill="#f5f7fb" font-size="27" font-weight="700">TRANSFORMAÇÃO</text>
-  <text x="572" y="655" fill="#b9c9dc" font-size="20">Transformação e limpeza de dados com pandas</text>
+  <text x="572" y="540" fill="#f5f7fb" font-size="27" font-weight="700">TRANSFORMAÇÃO</text>
+  <text x="572" y="570" fill="#b9c9dc" font-size="20">Transformação e limpeza de dados com pandas</text>
 
   <!-- PostgreSQL -->
-  <g transform="translate(830 210)">
+  <g transform="translate(830 200)">
     <ellipse cx="105" cy="48" rx="82" ry="25" fill="url(#blue)" stroke="#6bd6ff" stroke-width="2"/>
     <rect x="23" y="48" width="164" height="115" fill="url(#blue)"/>
     <ellipse cx="105" cy="163" rx="82" ry="25" fill="#145edc"/>
@@ -69,21 +72,21 @@
     <path d="M107 166 C111 145 111 121 101 98 C96 87 91 79 86 74" fill="none" stroke="#1769ff" stroke-width="7"/>
     <path d="M120 119 C141 105 155 96 164 83" fill="none" stroke="#1769ff" stroke-width="7"/>
   </g>
-  <text x="922" y="620" fill="#f5f7fb" font-size="27" font-weight="700">ARMAZENAMENTO</text>
-  <text x="922" y="655" fill="#b9c9dc" font-size="20">Estruturação dos dados no PostgreSQL</text>
+  <text x="922" y="540" fill="#f5f7fb" font-size="27" font-weight="700">ARMAZENAMENTO</text>
+  <text x="922" y="570" fill="#b9c9dc" font-size="20">Estruturação dos dados no PostgreSQL</text>
 
   <!-- análise -->
-  <g transform="translate(1180 215)" fill="url(#blue)">
+  <g transform="translate(1180 205)" fill="url(#blue)">
     <rect x="40" y="160" width="35" height="55" rx="5"/><rect x="88" y="125" width="35" height="90" rx="5"/><rect x="136" y="82" width="35" height="133" rx="5"/>
     <path d="M28 225 H184" stroke="#1da8ff" stroke-width="7"/>
     <circle cx="178" cy="145" r="55" fill="none" stroke="#1da8ff" stroke-width="15"/>
     <path d="M218 185 L260 227" stroke="#1da8ff" stroke-width="17" stroke-linecap="round"/>
   </g>
-  <text x="1272" y="620" fill="#f5f7fb" font-size="27" font-weight="700">ANÁLISE</text>
-  <text x="1272" y="655" fill="#b9c9dc" font-size="20">Consultas e exploração dos dados</text>
+  <text x="1272" y="540" fill="#f5f7fb" font-size="27" font-weight="700">ANÁLISE</text>
+  <text x="1272" y="570" fill="#b9c9dc" font-size="20">Consultas e exploração dos dados</text>
 
   <!-- dashboard -->
-  <g transform="translate(1535 215)">
+  <g transform="translate(1535 205)">
     <rect x="20" y="15" width="250" height="200" rx="12" fill="#07192d" stroke="#168cff" stroke-width="3"/>
     <circle cx="43" cy="38" r="6" fill="#55d9ff"/><circle cx="63" cy="38" r="6" fill="#55d9ff"/><circle cx="83" cy="38" r="6" fill="#55d9ff"/>
     <rect x="20" y="57" width="250" height="8" fill="#1769ff" opacity=".8"/>
@@ -91,7 +94,7 @@
     <polyline points="140,150 165,125 190,135 220,100 245,112" fill="none" stroke="#21b9ff" stroke-width="5"/>
     <g fill="#168cff"><rect x="140" y="165" width="20" height="35"/><rect x="168" y="145" width="20" height="55"/><rect x="196" y="155" width="20" height="45"/><rect x="224" y="130" width="20" height="70"/></g>
   </g>
-  <text x="1622" y="620" fill="#f5f7fb" font-size="27" font-weight="700">DASHBOARD</text>
-  <text x="1622" y="655" fill="#b9c9dc" font-size="20">Visualização interativa dos resultados</text>
+  <text x="1622" y="540" fill="#f5f7fb" font-size="27" font-weight="700">DASHBOARD</text>
+  <text x="1622" y="570" fill="#b9c9dc" font-size="20">Visualização interativa dos resultados</text>
 </g>
 </svg>
