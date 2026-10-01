@@ -28,10 +28,23 @@
   <header class="header">
     <div class="container nav">
       <a class="logo" href="#inicio" aria-label="Douglas Costa — início">DC<span>.</span></a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
       <nav id="site-menu" class="site-menu" aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#competencias">Competências</a><a href="#contato">Contato</a>
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+        <a href="#competencias" data-i18n="nav.skills">Competências</a>
+        <a href="#contato" data-i18n="nav.contact">Contato</a>
       </nav>
+      <div class="nav-tools">
+        <div class="language-switcher" aria-label="Idioma">
+          <button class="language-button is-active" data-lang="pt" type="button">PT</button>
+          <button class="language-button" data-lang="en" type="button">EN</button>
+          <button class="language-button" data-lang="es" type="button">ES</button>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
+          <span class="theme-icon">☾</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
@@ -39,32 +52,35 @@
     <section id="inicio" class="hero">
       <div class="container hero-grid">
         <div class="reveal">
-          <div class="hero-topline"><p class="availability"><span class="availability-dot"></span>Disponível para oportunidades</p></div>
-          <p class="eyebrow">TECNOLOGIA • DADOS • DESENVOLVIMENTO</p>
+          <div class="hero-topline"><p class="availability"><span class="availability-dot"></span><span data-i18n="hero.availability">Disponível para oportunidades</span></p></div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">TECNOLOGIA • DADOS • DESENVOLVIMENTO</p>
           <h1 class="name-title"><span class="name-first">DOUGLAS</span><span class="name-last">COSTA</span></h1>
           <div class="hero-meta">
-            <div><span>local</span><strong>São Paulo, SP</strong></div>
-            <div><span>curso</span><strong>Ciência da Computação, 7º semestre</strong></div>
-            <div><span>faculdade</span><strong>São Judas</strong></div>
+            <div><span data-i18n="hero.locationLabel">local</span><strong>São Paulo, SP</strong></div>
+            <div><span data-i18n="hero.courseLabel">curso</span><strong data-i18n="hero.course">Ciência da Computação, 7º semestre</strong></div>
+            <div><span data-i18n="hero.collegeLabel">faculdade</span><strong>São Judas</strong></div>
           </div>
-          <div class="actions"><a class="button primary" href="#projetos">Ver projetos</a><a class="button secondary" href="#contato">Entrar em contato</a></div>
+          <div class="actions">
+            <a class="button primary" href="#projetos" data-i18n="hero.projectsButton">Ver projetos</a>
+            <a class="button secondary" href="#contato" data-i18n="hero.contactButton">Entrar em contato</a>
+          </div>
         </div>
         <div class="hero-card reveal reveal-delay-2">
           <div class="terminal-top"><i></i><i></i><i></i></div>
           <pre><code><span class="muted">$</span> whoami
 
 Douglas Costa
-Tecnologia & Desenvolvimento
+<span data-i18n="terminal.tech">Tecnologia & Desenvolvimento</span>
 
 <span class="muted">$</span> focus
 
-<span class="blue">▸</span> Desenvolvimento web
+<span class="blue">▸</span> <span data-i18n="terminal.web">Desenvolvimento web</span>
 <span class="blue">▸</span> Python & SQL
-<span class="blue">▸</span> APIs & automação
-<span class="blue">▸</span> Projetos de dados
+<span class="blue">▸</span> <span data-i18n="terminal.api">APIs & automação</span>
+<span class="blue">▸</span> <span data-i18n="terminal.data">Projetos de dados</span>
 
 <span class="muted">$</span> status
-<span class="blue">●</span> construindo soluções</code></pre>
+<span class="blue">●</span> <span data-i18n="terminal.status">construindo soluções</span></code></pre>
         </div>
       </div>
     </section>
@@ -72,63 +88,75 @@ Tecnologia & Desenvolvimento
     <section id="sobre" class="section">
       <div class="container about-grid reveal">
         <div class="about-photo-wrap"><img class="about-photo" src="foto.jpg" alt="Foto de Douglas Costa"></div>
-        <div><p class="section-label">01 — SOBRE</p><h2>Da resolução de problemas ao desenvolvimento.</h2></div>
+        <div><p class="section-label">01 — <span data-i18n="sections.about">SOBRE</span></p><h2 data-i18n="about.title">Da resolução de problemas ao desenvolvimento.</h2></div>
         <div class="about-copy">
-          <p>Minha trajetória em tecnologia começou próxima do usuário e da infraestrutura, resolvendo problemas do dia a dia. Essa experiência me levou a buscar cada vez mais automação, desenvolvimento e análise de dados.</p>
-          <p>Hoje construo projetos próprios e soluções para negócios, unindo visão prática, programação e entendimento do problema de negócio.</p>
-          <div class="stats"><div><strong>TI</strong><span>Experiência corporativa</span></div><div><strong>WEB</strong><span>Projetos publicados</span></div><div><strong>DATA</strong><span>Projetos em Python e SQL</span></div></div>
+          <p data-i18n="about.p1">Minha trajetória em tecnologia começou próxima do usuário e da infraestrutura, resolvendo problemas do dia a dia. Essa experiência me levou a buscar cada vez mais automação, desenvolvimento e análise de dados.</p>
+          <p data-i18n="about.p2">Hoje construo projetos próprios e soluções para negócios, unindo visão prática, programação e entendimento do problema de negócio.</p>
+          <div class="stats">
+            <div><strong>TI</strong><span data-i18n="about.stat1">Experiência corporativa</span></div>
+            <div><strong>WEB</strong><span data-i18n="about.stat2">Projetos publicados</span></div>
+            <div><strong>DATA</strong><span data-i18n="about.stat3">Projetos em Python e SQL</span></div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="projetos" class="section projects-section">
       <div class="container">
-        <div class="section-heading reveal"><div><p class="section-label">02 — PROJETOS</p><h2>Projetos que mostram o que eu sei fazer.</h2></div></div>
+        <div class="section-heading reveal"><div><p class="section-label">02 — <span data-i18n="sections.projects">PROJETOS</span></p><h2 data-i18n="projects.title">Projetos que mostram o que eu sei fazer.</h2></div></div>
         <div class="projects">
           <article class="project featured reveal">
             <div class="project-number">01</div>
             <div class="project-content">
               <div class="project-top"><span>DATA SCIENCE</span><span>PYTHON • SQL</span></div>
-              <h3>Credit Risk & Pricing</h3>
-              <p>Pipeline de ciência de dados aplicado a risco de crédito: tratamento, análise exploratória, engenharia de atributos, modelagem, estimativa de probabilidade de inadimplência e simulação de pricing.</p>
-              <img class="project-flow-image" src="credit-risk-flow.svg" alt="Fluxo do projeto: coleta de dados via API, transformação com Pandas, análise exploratória, Machine Learning e avaliação de risco." style="display:block;width:100%;height:auto;max-height:360px;object-fit:cover;object-position:center;border:1px solid rgba(47,140,255,.18);border-radius:12px;margin:26px 0 0;">
+              <h3>Credit Risk</h3>
+              <p data-i18n="projects.creditRisk">Pipeline de ciência de dados aplicado a risco de crédito: tratamento, análise exploratória, engenharia de atributos, modelagem e estimativa de probabilidade de inadimplência.</p>
+              <img class="project-flow-image" src="credit-risk-flow.svg" alt="Fluxo do projeto de risco de crédito." style="display:block;width:100%;height:auto;max-height:360px;object-fit:cover;object-position:center;border:1px solid rgba(47,140,255,.18);border-radius:12px;margin:26px 0 0;">
             </div>
           </article>
-          <article class="project reveal"><div class="project-number">02</div><div class="project-content"><div class="project-top"><span>DATA ENGINEERING</span><span>PYTHON • API • PANDAS</span></div><h3>Pipeline de Dados de Criptomoedas</h3><p>Pipeline ETL que coleta dados de uma API de criptomoedas, transforma e estrutura informações como preço, market cap, volume e variação, preparando os dados para análise.</p><img class="project-flow-image" src="ott-ir-flow.svg" alt="Fluxo do projeto OTT IR: coleta via API, transformação e limpeza com pandas, armazenamento em PostgreSQL, análise e dashboard." style="display:block;width:100%;height:auto;max-height:360px;object-fit:cover;object-position:center;border:1px solid rgba(47,140,255,.18);border-radius:12px;margin:26px 0 0;"></div></article>
-          <article class="project reveal"><div class="project-number">03</div><div class="project-content"><div class="project-top"><span>IA • AUTOMAÇÃO</span><span>N8N • WHATSAPP</span></div><h3>Agente de IA para WhatsApp</h3><p>Automação desenvolvida para a Ilha do Paraíso, conectando WhatsApp, n8n e Inteligência Artificial para criar um agente capaz de atender e automatizar conversas.</p></div></article>
-          <article class="project reveal"><div class="project-number">04</div><div class="project-content"><div class="project-top"><span>FULL STACK</span><span>REACT • NODE • SUPABASE</span></div><h3>Barbearia Belarmino</h3><p>Sistema de agendamento com frontend em React/Vite e backend em Express, integrado ao Supabase. Projeto pensado para resolver uma operação real.</p></div></article>
-          <article class="project reveal"><div class="project-number">05</div><div class="project-content"><div class="project-top"><span>WEB • NEGÓCIO</span><span>REACT</span></div><h3>Monteiro Transportes</h3><p>Site comercial mobile-first desenvolvido com foco em conversão, orçamento pelo WhatsApp, SEO local e apresentação profissional da empresa.</p></div></article>
-          <article class="project reveal"><div class="project-number">06</div><div class="project-content"><div class="project-top"><span>WEB • TURISMO</span><span>NEXT.JS</span></div><h3>Serra Turismo</h3><p>Projeto web para turismo, com foco em apresentação de serviços, experiência mobile e geração de contatos.</p></div></article>
-          <article class="project reveal"><div class="project-number">07</div><div class="project-content"><div class="project-top"><span>WEB</span><span>REACT • TYPESCRIPT</span></div><h3>Projetos comerciais</h3><p>Conjunto de sites desenvolvidos para pequenos negócios, incluindo imobiliárias, turismo, serviços e empresas locais.</p></div></article>
+          <article class="project reveal">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <div class="project-top"><span>DATA ENGINEERING</span><span>PYTHON • API • PANDAS</span></div>
+              <h3>Pipeline de Dados de Criptomoedas</h3>
+              <p data-i18n="projects.crypto">Pipeline ETL que coleta dados de uma API de criptomoedas, transforma e estrutura informações como preço, market cap, volume e variação, preparando os dados para análise.</p>
+              <img class="project-flow-image" src="ott-ir-flow.svg" alt="Fluxo do projeto de engenharia de dados." style="display:block;width:100%;height:auto;max-height:360px;object-fit:cover;object-position:center;border:1px solid rgba(47,140,255,.18);border-radius:12px;margin:26px 0 0;">
+            </div>
+          </article>
+          <article class="project reveal"><div class="project-number">03</div><div class="project-content"><div class="project-top"><span>IA • AUTOMAÇÃO</span><span>N8N • WHATSAPP</span></div><h3>Agente de IA para WhatsApp</h3><p data-i18n="projects.whatsapp">Automação desenvolvida para a Ilha do Paraíso, conectando WhatsApp, n8n e Inteligência Artificial para criar um agente capaz de atender e automatizar conversas.</p></div></article>
+          <article class="project reveal"><div class="project-number">04</div><div class="project-content"><div class="project-top"><span>FULL STACK</span><span>REACT • NODE • SUPABASE</span></div><h3>Barbearia Belarmino</h3><p data-i18n="projects.belarmi">Sistema de agendamento com frontend em React/Vite e backend em Express, integrado ao Supabase. Projeto pensado para resolver uma operação real.</p></div></article>
+          <article class="project reveal"><div class="project-number">05</div><div class="project-content"><div class="project-top"><span>WEB • NEGÓCIO</span><span>REACT</span></div><h3>Monteiro Transportes</h3><p data-i18n="projects.monteiro">Site comercial mobile-first desenvolvido com foco em conversão, orçamento pelo WhatsApp, SEO local e apresentação profissional da empresa.</p></div></article>
+          <article class="project reveal"><div class="project-number">06</div><div class="project-content"><div class="project-top"><span>WEB • TURISMO</span><span>NEXT.JS</span></div><h3>Serra Turismo</h3><p data-i18n="projects.serra">Projeto web para turismo, com foco em apresentação de serviços, experiência mobile e geração de contatos.</p></div></article>
+          <article class="project reveal"><div class="project-number">07</div><div class="project-content"><div class="project-top"><span>WEB</span><span>REACT • TYPESCRIPT</span></div><h3 data-i18n="projects.commercialTitle">Projetos comerciais</h3><p data-i18n="projects.commercial">Conjunto de sites desenvolvidos para pequenos negócios, incluindo imobiliárias, turismo, serviços e empresas locais.</p></div></article>
         </div>
       </div>
     </section>
 
     <section id="competencias" class="section skills-section">
       <div class="container">
-        <div class="section-heading reveal"><div><p class="section-label">03 — COMPETÊNCIAS</p><h2>Stack que uso para construir soluções.</h2></div></div>
+        <div class="section-heading reveal"><div><p class="section-label">03 — <span data-i18n="sections.skills">COMPETÊNCIAS</span></p><h2 data-i18n="skills.title">Stack que uso para construir soluções.</h2></div></div>
         <div class="skills-grid">
-          <div class="skill-group skill-main reveal"><span class="skill-index">01</span><p class="skill-kicker">CORE</p><h3>Desenvolvimento</h3><p class="skill-description">Construção de aplicações e integrações web, do frontend às APIs.</p><div class="tags"><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Node.js</span><span>APIs REST</span></div></div>
-          <div class="skill-group reveal reveal-delay-1"><span class="skill-index">02</span><p class="skill-kicker">DATA</p><h3>Dados</h3><p class="skill-description">Tratamento, análise e preparação de dados para apoiar decisões e modelos.</p><div class="tags"><span>SQL</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>ETL</span><span>Análise de dados</span></div></div>
-          <div class="skill-group reveal reveal-delay-2"><span class="skill-index">03</span><p class="skill-kicker">STACK</p><h3>Ferramentas</h3><p class="skill-description">Ferramentas para publicar, integrar e manter projetos funcionando.</p><div class="tags"><span>Git</span><span>Supabase</span><span>Vercel</span><span>Cloudflare</span><span>Docker</span></div></div>
+          <div class="skill-group skill-main reveal"><span class="skill-index">01</span><p class="skill-kicker">CORE</p><h3 data-i18n="skills.devTitle">Desenvolvimento</h3><p class="skill-description" data-i18n="skills.devDesc">Construção de aplicações e integrações web, do frontend às APIs.</p><div class="tags"><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Node.js</span><span>APIs REST</span></div></div>
+          <div class="skill-group reveal reveal-delay-1"><span class="skill-index">02</span><p class="skill-kicker">DATA</p><h3 data-i18n="skills.dataTitle">Dados</h3><p class="skill-description" data-i18n="skills.dataDesc">Tratamento, análise e preparação de dados para apoiar decisões e modelos.</p><div class="tags"><span>SQL</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>ETL</span><span data-i18n="skills.dataTag">Análise de dados</span></div></div>
+          <div class="skill-group reveal reveal-delay-2"><span class="skill-index">03</span><p class="skill-kicker">STACK</p><h3 data-i18n="skills.toolsTitle">Ferramentas</h3><p class="skill-description" data-i18n="skills.toolsDesc">Ferramentas para publicar, integrar e manter projetos funcionando.</p><div class="tags"><span>Git</span><span>Supabase</span><span>Vercel</span><span>Cloudflare</span><span>Docker</span></div></div>
         </div>
       </div>
     </section>
 
     <section id="contato" class="contact">
       <div class="container contact-grid reveal">
-        <div><p class="section-label">04 — CONTATO</p><h2>Tem um projeto ou oportunidade?</h2><p class="contact-intro">Estou aberto a conversar sobre oportunidades em tecnologia, desenvolvimento, dados e projetos digitais.</p></div>
+        <div><p class="section-label">04 — <span data-i18n="sections.contact">CONTATO</span></p><h2 data-i18n="contact.title">Tem um projeto ou oportunidade?</h2><p class="contact-intro" data-i18n="contact.intro">Estou aberto a conversar sobre oportunidades em tecnologia, desenvolvimento, dados e projetos digitais.</p></div>
         <div class="contact-card">
-          <span class="contact-card-label">FALE COMIGO</span>
-          <a class="contact-item" href="mailto:ggdouglas1227@gmail.com"><span>E-mail</span><strong>ggdouglas1227@gmail.com</strong></a>
+          <span class="contact-card-label" data-i18n="contact.label">FALE COMIGO</span>
+          <a class="contact-item" href="mailto:ggdouglas1227@gmail.com"><span data-i18n="contact.email">E-mail</span><strong>ggdouglas1227@gmail.com</strong></a>
           <a class="contact-item" href="https://www.linkedin.com/in/douglascosta1227" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>linkedin.com/in/douglascosta1227</strong></a>
-          <a class="contact-cta" href="mailto:ggdouglas1227@gmail.com">Entrar em contato</a>
+          <a class="contact-cta" href="mailto:ggdouglas1227@gmail.com" data-i18n="contact.button">Entrar em contato</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><div class="container footer-inner"><span>Douglas Costa © <span id="year"></span></span><span>São Paulo, Brasil</span></div></footer>
+  <footer><div class="container footer-inner"><span>Douglas Costa © <span id="year"></span></span><span data-i18n="footer.location">São Paulo, Brasil</span></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
