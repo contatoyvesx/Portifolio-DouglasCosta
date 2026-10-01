@@ -87,3 +87,7 @@ body.light-theme footer{background:#f5f7fb}
   .language-button{font-size:9px;padding:5px}
   .theme-toggle{width:32px;height:32px}
 }
+
+/* Terminal text */
+.hero-card pre,.hero-card pre code{color:#fff}
+.hero-card pre .muted,.hero-card pre .blue{color:#fff}
