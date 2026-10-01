@@ -21,6 +21,126 @@ if (menuToggle && siteMenu) {
   });
 }
 
+const translations = {
+  pt: {
+    'nav.about':'Sobre','nav.projects':'Projetos','nav.skills':'Competências','nav.contact':'Contato',
+    'hero.availability':'Disponível para oportunidades','hero.eyebrow':'TECNOLOGIA • DADOS • DESENVOLVIMENTO',
+    'hero.locationLabel':'local','hero.courseLabel':'curso','hero.course':'Ciência da Computação, 7º semestre','hero.collegeLabel':'faculdade',
+    'hero.projectsButton':'Ver projetos','hero.contactButton':'Entrar em contato',
+    'terminal.tech':'Tecnologia & Desenvolvimento','terminal.web':'Desenvolvimento web','terminal.api':'APIs & automação','terminal.data':'Projetos de dados','terminal.status':'construindo soluções',
+    'sections.about':'SOBRE','sections.projects':'PROJETOS','sections.skills':'COMPETÊNCIAS','sections.contact':'CONTATO',
+    'about.title':'Da resolução de problemas ao desenvolvimento.',
+    'about.p1':'Minha trajetória em tecnologia começou próxima do usuário e da infraestrutura, resolvendo problemas do dia a dia. Essa experiência me levou a buscar cada vez mais automação, desenvolvimento e análise de dados.',
+    'about.p2':'Hoje construo projetos próprios e soluções para negócios, unindo visão prática, programação e entendimento do problema de negócio.',
+    'about.stat1':'Experiência corporativa','about.stat2':'Projetos publicados','about.stat3':'Projetos em Python e SQL',
+    'projects.title':'Projetos que mostram o que eu sei fazer.',
+    'projects.creditRisk':'Pipeline de ciência de dados aplicado a risco de crédito: tratamento, análise exploratória, engenharia de atributos, modelagem e estimativa de probabilidade de inadimplência.',
+    'projects.crypto':'Pipeline ETL que coleta dados de uma API de criptomoedas, transforma e estrutura informações como preço, market cap, volume e variação, preparando os dados para análise.',
+    'projects.whatsapp':'Automação desenvolvida para a Ilha do Paraíso, conectando WhatsApp, n8n e Inteligência Artificial para criar um agente capaz de atender e automatizar conversas.',
+    'projects.belarmi':'Sistema de agendamento com frontend em React/Vite e backend em Express, integrado ao Supabase. Projeto pensado para resolver uma operação real.',
+    'projects.monteiro':'Site comercial mobile-first desenvolvido com foco em conversão, orçamento pelo WhatsApp, SEO local e apresentação profissional da empresa.',
+    'projects.serra':'Projeto web para turismo, com foco em apresentação de serviços, experiência mobile e geração de contatos.',
+    'projects.commercialTitle':'Projetos comerciais','projects.commercial':'Conjunto de sites desenvolvidos para pequenos negócios, incluindo imobiliárias, turismo, serviços e empresas locais.',
+    'skills.title':'Stack que uso para construir soluções.','skills.devTitle':'Desenvolvimento','skills.devDesc':'Construção de aplicações e integrações web, do frontend às APIs.',
+    'skills.dataTitle':'Dados','skills.dataDesc':'Tratamento, análise e preparação de dados para apoiar decisões e modelos.','skills.dataTag':'Análise de dados',
+    'skills.toolsTitle':'Ferramentas','skills.toolsDesc':'Ferramentas para publicar, integrar e manter projetos funcionando.',
+    'contact.title':'Tem um projeto ou oportunidade?','contact.intro':'Estou aberto a conversar sobre oportunidades em tecnologia, desenvolvimento, dados e projetos digitais.',
+    'contact.label':'FALE COMIGO','contact.email':'E-mail','contact.button':'Entrar em contato','footer.location':'São Paulo, Brasil'
+  },
+  en: {
+    'nav.about':'About','nav.projects':'Projects','nav.skills':'Skills','nav.contact':'Contact',
+    'hero.availability':'Open to opportunities','hero.eyebrow':'TECHNOLOGY • DATA • DEVELOPMENT',
+    'hero.locationLabel':'location','hero.courseLabel':'degree','hero.course':'Computer Science, 7th semester','hero.collegeLabel':'university',
+    'hero.projectsButton':'View projects','hero.contactButton':'Get in touch',
+    'terminal.tech':'Technology & Development','terminal.web':'Web development','terminal.api':'APIs & automation','terminal.data':'Data projects','terminal.status':'building solutions',
+    'sections.about':'ABOUT','sections.projects':'PROJECTS','sections.skills':'SKILLS','sections.contact':'CONTACT',
+    'about.title':'From solving problems to building solutions.',
+    'about.p1':'My journey in technology started close to users and infrastructure, solving day-to-day problems. That experience led me toward automation, development and data analysis.',
+    'about.p2':'Today I build personal projects and business solutions, combining practical thinking, programming and an understanding of business needs.',
+    'about.stat1':'Corporate experience','about.stat2':'Published projects','about.stat3':'Python & SQL projects',
+    'projects.title':'Projects that show what I can build.',
+    'projects.creditRisk':'Data science pipeline for credit risk: data treatment, exploratory analysis, feature engineering, modeling and probability of default estimation.',
+    'projects.crypto':'ETL pipeline that collects cryptocurrency data from an API, transforms and structures metrics such as price, market cap, volume and change for analysis.',
+    'projects.whatsapp':'Automation developed for Ilha do Paraíso, connecting WhatsApp, n8n and AI to create an agent capable of handling and automating conversations.',
+    'projects.belarmi':'Scheduling system with a React/Vite frontend and Express backend, integrated with Supabase. Built to solve a real operation.',
+    'projects.monteiro':'Mobile-first business website focused on conversion, WhatsApp quotes, local SEO and professional company presentation.',
+    'projects.serra':'Tourism website focused on service presentation, mobile experience and lead generation.',
+    'projects.commercialTitle':'Commercial projects','projects.commercial':'A collection of websites built for small businesses, including real estate, tourism, services and local companies.',
+    'skills.title':'The stack I use to build solutions.','skills.devTitle':'Development','skills.devDesc':'Building web applications and integrations, from frontend interfaces to APIs.',
+    'skills.dataTitle':'Data','skills.dataDesc':'Data processing, analysis and preparation to support decisions and models.','skills.dataTag':'Data analysis',
+    'skills.toolsTitle':'Tools','skills.toolsDesc':'Tools used to deploy, integrate and keep projects running.',
+    'contact.title':'Have a project or opportunity?','contact.intro':'I am open to conversations about opportunities in technology, development, data and digital projects.',
+    'contact.label':'GET IN TOUCH','contact.email':'E-mail','contact.button':'Get in touch','footer.location':'São Paulo, Brazil'
+  },
+  es: {
+    'nav.about':'Sobre mí','nav.projects':'Proyectos','nav.skills':'Habilidades','nav.contact':'Contacto',
+    'hero.availability':'Disponible para oportunidades','hero.eyebrow':'TECNOLOGÍA • DATOS • DESARROLLO',
+    'hero.locationLabel':'ubicación','hero.courseLabel':'carrera','hero.course':'Ciencias de la Computación, 7.º semestre','hero.collegeLabel':'universidad',
+    'hero.projectsButton':'Ver proyectos','hero.contactButton':'Contactarme',
+    'terminal.tech':'Tecnología y Desarrollo','terminal.web':'Desarrollo web','terminal.api':'APIs y automatización','terminal.data':'Proyectos de datos','terminal.status':'construyendo soluciones',
+    'sections.about':'SOBRE MÍ','sections.projects':'PROYECTOS','sections.skills':'HABILIDADES','sections.contact':'CONTACTO',
+    'about.title':'De resolver problemas a desarrollar soluciones.',
+    'about.p1':'Mi trayectoria en tecnología comenzó cerca de usuarios e infraestructura, resolviendo problemas del día a día. Esa experiencia me llevó hacia la automatización, el desarrollo y el análisis de datos.',
+    'about.p2':'Hoy construyo proyectos propios y soluciones para negocios, combinando visión práctica, programación y comprensión de las necesidades del negocio.',
+    'about.stat1':'Experiencia corporativa','about.stat2':'Proyectos publicados','about.stat3':'Proyectos en Python y SQL',
+    'projects.title':'Proyectos que muestran lo que sé hacer.',
+    'projects.creditRisk':'Pipeline de ciencia de datos aplicado al riesgo crediticio: tratamiento, análisis exploratorio, ingeniería de variables, modelado y estimación de probabilidad de impago.',
+    'projects.crypto':'Pipeline ETL que recopila datos de criptomonedas mediante una API, transforma y estructura métricas como precio, capitalización, volumen y variación para su análisis.',
+    'projects.whatsapp':'Automatización desarrollada para Ilha do Paraíso, conectando WhatsApp, n8n e IA para crear un agente capaz de atender y automatizar conversaciones.',
+    'projects.belarmi':'Sistema de reservas con frontend en React/Vite y backend en Express, integrado con Supabase. Diseñado para resolver una operación real.',
+    'projects.monteiro':'Sitio comercial mobile-first enfocado en conversión, presupuestos por WhatsApp, SEO local y presentación profesional de la empresa.',
+    'projects.serra':'Proyecto web para turismo, enfocado en la presentación de servicios, experiencia móvil y generación de contactos.',
+    'projects.commercialTitle':'Proyectos comerciales','projects.commercial':'Conjunto de sitios desarrollados para pequeños negocios, incluyendo inmobiliarias, turismo, servicios y empresas locales.',
+    'skills.title':'El stack que uso para construir soluciones.','skills.devTitle':'Desarrollo','skills.devDesc':'Construcción de aplicaciones e integraciones web, desde el frontend hasta las APIs.',
+    'skills.dataTitle':'Datos','skills.dataDesc':'Tratamiento, análisis y preparación de datos para apoyar decisiones y modelos.','skills.dataTag':'Análisis de datos',
+    'skills.toolsTitle':'Herramientas','skills.toolsDesc':'Herramientas para publicar, integrar y mantener los proyectos funcionando.',
+    'contact.title':'¿Tienes un proyecto u oportunidad?','contact.intro':'Estoy abierto a conversar sobre oportunidades en tecnología, desarrollo, datos y proyectos digitales.',
+    'contact.label':'HABLEMOS','contact.email':'E-mail','contact.button':'Contactarme','footer.location':'São Paulo, Brasil'
+  }
+};
+
+const languageButtons = document.querySelectorAll('.language-button');
+
+function applyLanguage(lang) {
+  const dictionary = translations[lang] || translations.pt;
+  document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang === 'en' ? 'en' : 'es';
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.dataset.i18n;
+    if (dictionary[key]) element.textContent = dictionary[key];
+  });
+  languageButtons.forEach(button => button.classList.toggle('is-active', button.dataset.lang === lang));
+  localStorage.setItem('portfolio-language', lang);
+}
+
+languageButtons.forEach(button => {
+  button.addEventListener('click', () => applyLanguage(button.dataset.lang));
+});
+
+const savedLanguage = localStorage.getItem('portfolio-language') || 'pt';
+applyLanguage(savedLanguage);
+
+const themeToggle = document.querySelector('.theme-toggle');
+const themeIcon = document.querySelector('.theme-icon');
+
+function applyTheme(theme) {
+  const isLight = theme === 'light';
+  document.body.classList.toggle('light-theme', isLight);
+  if (themeIcon) themeIcon.textContent = isLight ? '☀' : '☾';
+  if (themeToggle) {
+    themeToggle.setAttribute('aria-pressed', String(isLight));
+    themeToggle.setAttribute('aria-label', isLight ? 'Ativar modo escuro' : 'Ativar modo claro');
+  }
+  localStorage.setItem('portfolio-theme', theme);
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    applyTheme(document.body.classList.contains('light-theme') ? 'dark' : 'light');
+  });
+}
+
+applyTheme(localStorage.getItem('portfolio-theme') || 'dark');
+
 const revealItems = document.querySelectorAll('.reveal');
 
 if ('IntersectionObserver' in window) {
@@ -62,16 +182,13 @@ if (isMobile) {
       }
     });
 
-    cards.forEach(card => {
-      card.classList.toggle('is-active', card === closestCard);
-    });
+    cards.forEach(card => card.classList.toggle('is-active', card === closestCard));
   }
 
   let ticking = false;
 
   function handleScroll() {
     if (ticking) return;
-
     ticking = true;
 
     requestAnimationFrame(() => {
@@ -86,6 +203,5 @@ if (isMobile) {
 
   window.addEventListener('scroll', handleScroll, { passive: true });
   window.addEventListener('resize', handleScroll, { passive: true });
-
   handleScroll();
 }
