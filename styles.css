@@ -91,3 +91,5 @@ body.light-theme footer{background:#f5f7fb}
 /* Terminal text */
 .hero-card pre,.hero-card pre code{color:#fff}
 .hero-card pre .muted,.hero-card pre .blue{color:#fff}
+
+.availability{color:#000}
