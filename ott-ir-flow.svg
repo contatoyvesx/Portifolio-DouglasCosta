@@ -12,8 +12,6 @@
 </g>
 <path d="M0 620 L260 760 H0Z" fill="#08275a" opacity=".45"/>
 <path d="M1920 80 L1650 0 H1920Z" fill="#06245b" opacity=".35"/>
-<g opacity=".45" filter="url(#soft)" fill="#0b66ff"><circle cx="250" cy="180" r="110"/><circle cx="1670" cy="540" r="120"/></g>
-
 <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
   <g stroke="#148cff" stroke-width="2" fill="#06111f">
     <rect x="65" y="160" width="315" height="340" rx="24"/>
