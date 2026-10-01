@@ -92,4 +92,4 @@ body.light-theme footer{background:#f5f7fb}
 .hero-card pre,.hero-card pre code{color:#fff}
 .hero-card pre .muted,.hero-card pre .blue{color:#fff}
 
-.availability{color:#000}
+body.light-theme .availability{color:#000}
