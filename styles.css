@@ -124,14 +124,16 @@ body.light-theme .experience-body{background:#fff}
 /* Formação e cursos */
 .education-section{background:var(--bg)}
 .education-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:24px;align-items:start}
-.education-feature{position:relative;min-height:100%;padding:38px;background:linear-gradient(145deg,rgba(47,140,255,.12),var(--surface) 58%);border:1px solid rgba(47,140,255,.48);border-radius:16px;box-shadow:inset 0 2px 0 var(--accent),0 22px 55px rgba(0,0,0,.18);overflow:hidden}
-.education-feature:after{content:"";position:absolute;width:180px;height:180px;right:-70px;bottom:-80px;border-radius:50%;border:1px solid rgba(47,140,255,.18);box-shadow:0 0 0 25px rgba(47,140,255,.025),0 0 0 50px rgba(47,140,255,.018)}
-.education-icon{font-size:28px;margin-bottom:24px}
-.education-kicker,.certification-label{color:var(--accent);font:700 10px/1 'DM Sans',sans-serif;letter-spacing:1.8px}
-.education-feature h3{font-size:32px;letter-spacing:-1px;margin:18px 0 10px;max-width:320px}
-.education-semester{font:600 15px 'Space Grotesk',sans-serif;color:var(--text);margin-bottom:6px}
-.education-institution{color:var(--muted);font-size:15px;margin-bottom:24px}
-.education-status{display:inline-flex;padding:7px 10px;border:1px solid rgba(47,140,255,.38);border-radius:999px;color:var(--accent);font:700 9px 'DM Sans',sans-serif;letter-spacing:1.2px}
+.education-feature{position:relative;min-height:100%;padding:34px;background:linear-gradient(145deg,rgba(47,140,255,.13),var(--surface) 62%);border:1px solid rgba(47,140,255,.5);border-radius:16px;box-shadow:inset 0 2px 0 var(--accent),0 22px 55px rgba(0,0,0,.18);overflow:hidden;display:flex;flex-direction:column}
+.education-feature:before{content:"";position:absolute;top:0;right:0;width:150px;height:150px;background:radial-gradient(circle,rgba(47,140,255,.12),transparent 68%);pointer-events:none}
+.education-feature:after{content:"";position:absolute;width:190px;height:190px;right:-95px;bottom:-95px;border-radius:50%;border:1px solid rgba(47,140,255,.16);box-shadow:0 0 0 28px rgba(47,140,255,.02),0 0 0 56px rgba(47,140,255,.015);pointer-events:none}
+.education-icon{position:relative;z-index:1;width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin-bottom:22px;border:1px solid rgba(47,140,255,.35);border-radius:12px;background:rgba(47,140,255,.08);font-size:23px;box-shadow:0 8px 24px rgba(47,140,255,.1)}
+.education-kicker,.certification-label{position:relative;z-index:1;color:var(--accent);font:700 10px/1 'DM Sans',sans-serif;letter-spacing:1.8px}
+.education-feature h3{position:relative;z-index:1;font-size:30px;line-height:1.08;letter-spacing:-1px;margin:14px 0 18px;max-width:320px}
+.education-semester{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:0 0 20px;max-width:300px}
+.education-institution{position:relative;z-index:1;color:var(--text);font-size:14px;font-weight:600;margin:0 0 6px}
+.education-status{position:relative;z-index:1;align-self:flex-start;display:inline-flex;padding:7px 10px;border:1px solid rgba(47,140,255,.38);border-radius:999px;color:var(--accent);font:700 9px 'DM Sans',sans-serif;letter-spacing:1.2px}
+.education-feature .education-status:before{content:"";width:6px;height:6px;margin-right:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 9px rgba(47,140,255,.7)}
 .education-content{display:flex;flex-direction:column;gap:16px}
 .course-block{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
 .course-heading{display:flex;align-items:center;gap:12px;margin-bottom:16px}
