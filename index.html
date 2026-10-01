@@ -11,7 +11,10 @@
   <header class="header">
     <div class="container nav">
       <a class="logo" href="#inicio">DC<span>.</span></a>
-      <nav>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-menu">
         <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
         <a href="#competencias">Competências</a>
@@ -33,7 +36,7 @@
             <div><span>faculdade</span><strong>São Judas</strong></div>
           </div>
           <div class="actions">
-            <a class="button primary" href="#projetos">Ver projetos <span>↗</span></a>
+            <a class="button primary" href="#projetos">Ver projetos</a>
             <a class="button secondary" href="#contato">Entrar em contato</a>
           </div>
         </div>
@@ -110,17 +113,29 @@ Tecnologia & Desenvolvimento
           <article class="project">
             <div class="project-number">02</div>
             <div class="project-content">
-              <div class="project-top"><span>FULL STACK</span><span>REACT • NODE • SUPABASE</span></div>
-              <h3>Barbearia Belarmino</h3>
+              <div class="project-top"><span>DATA ENGINEERING</span><span>PYTHON • API • PANDAS</span></div>
+              <h3>Pipeline de Dados de Criptomoedas</h3>
               <p>
-                Sistema de agendamento com frontend em React/Vite e backend em Express,
-                integrado ao Supabase. Projeto pensado para resolver uma operação real.
+                Pipeline ETL que coleta dados de uma API de criptomoedas, transforma e estrutura
+                informações como preço, market cap, volume e variação, preparando os dados para análise.
               </p>
             </div>
           </article>
 
           <article class="project">
             <div class="project-number">03</div>
+            <div class="project-content">
+              <div class="project-top"><span>IA • AUTOMAÇÃO</span><span>N8N • WHATSAPP</span></div>
+              <h3>Agente de IA para WhatsApp</h3>
+              <p>
+                Automação desenvolvida para a Ilha do Paraíso, conectando WhatsApp, n8n e
+                Inteligência Artificial para criar um agente capaz de atender e automatizar conversas.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-number">04</div>
             <div class="project-content">
               <div class="project-top"><span>WEB • NEGÓCIO</span><span>REACT</span></div>
               <h3>Monteiro Transportes</h3>
@@ -132,25 +147,13 @@ Tecnologia & Desenvolvimento
           </article>
 
           <article class="project">
-            <div class="project-number">04</div>
+            <div class="project-number">05</div>
             <div class="project-content">
               <div class="project-top"><span>WEB • TURISMO</span><span>NEXT.JS</span></div>
               <h3>Serra Turismo</h3>
               <p>
                 Projeto web para turismo, com foco em apresentação de serviços,
                 experiência mobile e geração de contatos.
-              </p>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-number">05</div>
-            <div class="project-content">
-              <div class="project-top"><span>WEB • SAAS</span><span>REACT</span></div>
-              <h3>Ganho Certo</h3>
-              <p>
-                Aplicação web desenvolvida com React, TypeScript e Supabase,
-                explorando autenticação, dados e experiência de produto.
               </p>
             </div>
           </article>
