@@ -201,3 +201,21 @@ h1{margin:0 0 22px}
   .menu-toggle.is-open span:nth-child(2){opacity:0}
   .menu-toggle.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 }
+
+@media(max-width:800px){
+  .site-menu{
+    border-bottom:1px solid rgba(47,140,255,.32);
+    box-shadow:0 14px 28px rgba(0,0,0,.35),0 1px 10px rgba(47,140,255,.12);
+  }
+  .site-menu:after{
+    content:"";
+    position:absolute;
+    left:12%;
+    right:12%;
+    bottom:-1px;
+    height:1px;
+    background:linear-gradient(90deg,transparent,rgba(47,140,255,.7),transparent);
+    box-shadow:0 0 8px rgba(47,140,255,.45);
+    pointer-events:none;
+  }
+}
